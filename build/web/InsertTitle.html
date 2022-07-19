@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--     <form action="TitleController?go=insertTitle" method="post"> -->
+    <form action="TitleController" method="post">
+        <input type="hidden" name="go" value="insertTile">
+        <table>
+            <tr>
+                <td>Title ID</td>
+                <td>
+                    <input type ="text" name="title_id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Title
+                </td>
+                <td>
+                    <input type="text" name="title">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Type
+                </td>
+                <td>
+                    <input type="text" name="Type">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pubid">Publisher</label>
+                </td>
+                <td>
+                    <select name="pubid" id="pubid">
+                        <option value="0736"> New Moon Books </option>
+                        <option value="0877"> Binnet & Hardley </option>
+                        <option value="1389"> Algodata Infosystems </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>
+                    <input type="number" name="Price">
+                </td>
+            </tr>
+            <tr>
+                <td>Advance</td>
+                <td>
+                    <input type="number" name="Advance">
+                </td>
+            </tr>
+            <tr>
+                <td>Royalty</td>
+                <td>
+                    <input type="number" name="Royalty">
+                </td>
+            </tr>
+            <tr>
+                <td>Ytd_sales</td>
+                <td>
+                    <input type="number" name="Ytd_sales">
+                </td>
+            </tr>
+            <tr>
+                <td>Notes</td>
+                <td>
+                    <textarea name="notes"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>PubDate</td>
+                <td>
+                    <input type="date" name="Pubdate">
+                </td>
+            </tr>
+            <tr>
+                    <td>Image</td>
+                    <td>
+                        <input type="file" name="image">
+                    </td>
+                </tr>
+        </table>
+        <p>
+            <input type="submit" value="send">
+            <input type="reset" value="clear">
+        </p>
+    </form>
+</body>
+
+</html>

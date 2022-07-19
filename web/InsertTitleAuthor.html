@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="TitleAuthorController" method="post">
+            <input type="hidden" name="go" value="insertTitleAuthors">
+            <table>
+                <tr>
+                    <td><label for="au_id">Author</label></td>
+                    <td>
+                        <select name="au_id" id="au_id">
+                            <option value="213-46-8915">Marjorie Green</option>
+                            <option value="238-95-7766">Carson Cheryl</option>
+                            <option value="274-80-9391">Straight Dean</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tile_id">Title</label></td>
+                    <td>
+                        <select name="tile_id" id="tile_id">
+                            <option value="BU1032">The Busy Executive's Database Guide</option>
+                            <option value="BU1111">Cooking with Computers: Surreptitious Balance Sheets</option>
+                            <option value="BU2075">You Can Combat Computer Stress!</option>                       </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Author Order</td>
+                    <td>
+                        <input type="number" name ="au_ord">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Royal typer</td>
+                    <td>
+                        <input type="number" name ="royaltyper">
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <input type="submit" value="send">
+                <input type="reset" value="reset">
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="StoresController" method="post">
+            <input type="hidden" name="go" value="insertStore">
+            <table>
+                <tr>
+                    <td>Stor ID</td>
+                    <td>
+                        <input type="text" name = "stor_id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Store Name</td>
+                    <td>
+                        <input type="text" name = "stor_name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Store Address</td>
+                    <td>
+                        <input type="text" name = "stor_address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <input type="text" name="city">
+                    </td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td>
+                        <input type="text" name = "state">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zip</td>
+                    <td>
+                        <input type="text" name ="zip">
+                    </td>
+                </tr>
+
+            </table>
+            <p>
+                <input type="submit" value="send">
+                <input type="reset" value="reset">
+            </p>
+        </form>
+    </body>
+</html>

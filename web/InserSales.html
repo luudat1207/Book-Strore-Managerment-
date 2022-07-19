@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="SalesController" method="post">
+            <input type="hidden" name ="go" value="insertSales">
+            <table>
+                <tr>
+                    <td><label for="Stor_id">Store</label></td>
+                    <td>
+                        <select name="Stor_id" id="Stor_id">
+                            <option value="6380">Eric the Read Books</option>
+                            <option value="7066">Barnum's</option>
+                            <option value="7067">News & Brews</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ord_num</td>
+                    <td>
+                        <input type="text" name="ord_num">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ord_date</td>
+                    <td>
+                        <input type="date" name="ord_date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Quantity</td>
+                    <td>
+                        <input type="number" name="qty">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Payterms</td>
+                    <td>
+                        <input type="text" name="payterms">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tile_id">Title</label></td>
+                    <td>
+                        <select name="tile_id" id="tile_id">
+                            <option value="BU1032">The Busy Executive's Database Guide</option>
+                            <option value="BU1111">Cooking with Computers: Surreptitious Balance Sheets</option>
+                            <option value="BU2075">You Can Combat Computer Stress!</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>
+                        <input type="radio" value="1" name="status"> 1
+                        <input type="radio" value="2" name="status"> 2
+                        <input type="radio" value="3" name="status"> 3
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <input type="submit" value="send">
+                <input type="reset" value="reset">
+            </p>
+        </form>
+    </body>
+</html>

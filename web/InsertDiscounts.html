@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <form action="DiscountsController" method="post">
+        <input type="hidden" name="go" value="insertDiscounts">
+        <table>
+            <tr>
+                <td>Discounttype</td>
+                <td>
+                    <input type="text" name="discounttype">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="stor_id">Stores</label></td>
+                <td>
+                    <select name="stor_id" id="stor_id">
+                        <option value="6380">Eric the Read Books</option>
+                        <option value="7066">Barnum's</option>
+                        <option value="7067">News & Brews</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Low Quantity</td>
+                <td>
+                    <input type="number" name ="lowqty">
+                </td>
+            </tr>
+            <tr>
+                <td>Hight Quantity</td>
+                <td>
+                    <input type="number" name ="hightqty">
+                </td>
+            </tr>
+            <tr>
+                <td>Dicount</td>
+                <td>
+                    <input type="number" name="discount">
+                </td>
+            </tr>
+        </table>
+        <p>
+            <input type="submit" value="send">
+            <input type="reset" value="reset">
+        </p>
+    </form>
+</body>
+
+</html>

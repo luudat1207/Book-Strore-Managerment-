@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="EmployeeController" method="post">
+            <input type="hidden" name="go" value="insertEmployee">
+            <table>
+                <tr>
+                    <td>Employee ID</td>
+                    <td>
+                        <input type="text" name ="emp_id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <input type="text" name ="fname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Minit</td>
+                    <td>
+                        <input type="text" name ="minit">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>
+                        <input type="text" name ="lname">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="job_id">Job ID</label></td>
+                    <td>
+                        <select name="job_id" id="job_id">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Job LVL</td>
+                    <td>
+                        <input type="number" name ="job_lvl">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pub_id">PubLisher</label></td>
+                    <td>
+                        <select name="pub_id" id="pub_id">
+                            <option value="0736">New Moon Books</option>
+                            <option value="0877">Binnet & Hardley</option>
+                            <option value="1389">Algodata Infosystems</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hire Date</td>
+                    <td>
+                        <input type="date" name ="hire_date">
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <input type="submit" value="send">
+                <input type="reset" value="reset"> 
+            </p>
+        </form>
+    </body>
+</html>
